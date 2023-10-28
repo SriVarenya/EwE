@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tourism App</title>
+</head>
+<body>
+    <h1>Welcome to our Tourism App</h1>
+    <p>We're excited to help you plan your next adventure!</p>
+
+    <form id="userInfoForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="contact">Phone Number or Email:</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="location">Where are you from?</label>
+        <input type="text" id="location" name="location" required>
+
+        <input type="submit" value="Get Started">
+    </form>
+
+    <script>
+        document.getElementById('userInfoForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // You can add code here to process the user's information and potentially redirect them to other parts of your app.
+        });
+    </script>
+</body>
+</html>
